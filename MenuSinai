@@ -1,0 +1,55 @@
+using System;
+
+namespace Proyecto 
+{
+    class OpcionSinai
+    {
+        static void Main(string[] args)
+        {
+            bool continuar = true;
+            while (continuar)
+            {
+                //Opciones 
+                Console.Clear();
+                Console.WriteLine("<---OPCION de articulos de tienda de Barbie--->");
+                Console.WriteLine("1-) OPCION DE JUGUETERIA 1");
+                Console.WriteLine("2-) OPCION DE ROPA 2");
+                Console.WriteLine("3-) OPCION DE ACCESORIOS 3");
+                Console.WriteLine("4-) OPCION PARA SALIR 4");
+                Console.WriteLine("POR FAVOR ESCRIBE UNA DE LAS OPCIONES PARA SEGUIR");
+                int opcion = Convert.ToInt32(Console.ReadLine());
+                switch (opcion)
+                {
+                    case 1:
+                        Console.WriteLine("GENIAL, Haz elegido la opcion de JUGUETERIA 1");
+                        Console.WriteLine("presiona una tecla cualquiera para seguir");
+                        Console.ReadKey();
+                        break;
+                    case 2:
+                        Console.WriteLine("GENIAL, Haz elegido la opcion de ROPA 2");
+                        Console.WriteLine("presiona una tecla cualquiera para seguir");
+                        Console.ReadKey();
+                        break;
+                    case 3:
+                        Console.WriteLine("GENIAL, Haz elegido la opcion de ACCESORIOS 3");
+                        Console.WriteLine("presiona una tecla cualquiera para seguir");
+                        Console.ReadKey();
+                        break;
+                    case 4:
+                        Console.WriteLine("¿Desea salir de las opciones??");
+                        Console.WriteLine("Si/No");
+                        string deside = Console.ReadLine(); 
+                        if (deside == "si")
+                        {
+                            continuar = false;
+                        } 
+
+                        break;
+                    default:
+                        Console.WriteLine("A elegido una opcion que no se encuentra en el programa, elige de nuevo");
+                        break;
+                }
+            }
+        }
+    }
+} 
